@@ -1,0 +1,12 @@
+services:
+  app:
+    user: "${CONTAINER_EXEC_USER_ID:-1000}:${CONTAINER_EXEC_GROUP_ID:-1000}"
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        CONTAINER_EXEC_USER_ID: "${CONTAINER_EXEC_USER_ID:-1000}"
+        CONTAINER_EXEC_GROUP_ID: "${CONTAINER_EXEC_GROUP_ID:-1000}"
+    working_dir: /app
+    volumes:
+      - .:/app
