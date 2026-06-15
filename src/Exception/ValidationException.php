@@ -9,7 +9,6 @@ namespace Vendor\CommentsClient\Exception;
  *
  * Возникает при нарушении ограничений модели, например при пустом обязательном поле.
  */
-
 final class ValidationException extends CommentsClientException
 {
     public function __construct(string $message = '', ?\Throwable $previous = null)

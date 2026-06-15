@@ -1,5 +1,7 @@
 # Тестовое задание "comments client"
 
+[![CI](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
+
 PHP-библиотека HTTP-клиента для REST-сервиса комментариев `example.com`
 
 ## Установка
